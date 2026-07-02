@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Books | StudyShelf</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header class="navbar navbar-expand-lg shadow-sm bg-dark sticky-top rounded mt-2">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold fs-2 d-flex text-white align-items-center" href="#">
+        <img src="images/Web Logo.jpg" alt="Avatar Logo" style="width:70px; object-fit:cover; "
+          class="img-thumbnail rounded-circle me-3">
+        <span>StudyShelf</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <nav class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto fs-5 me-4 text-center">
+          <li class="nav-item"><a href="index.html" class="nav-link me-3">🏠 Home</a></li>
+          <li class="nav-item"><a href="books.html" class="nav-link me-3 active">📚 Books</a></li>
+          <li class="nav-item"><a href="quiz.html" class="nav-link me-3">🎯 Quiz</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link me-3">👥 About Us</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link me-3">📩 Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Book Categories -->
+   <div class="my-4 d-flex justify-content-center align-items-center">
+   <a href="ncert.html" class="btn ncert mt-4 align-items-center d-flex fs-6 justify-content-center rounded-pill btn-warning text-dark fw-bold">📚 NCERT Books</a>
+   </div>
+    <div class="container-fluid mt-4">
+      <div class="search-bar row justify-content-center m-0">
+        <div class="col-md-6 col-sm-10 px-0 col-12 ">
+          <div class="input-group mb-5 justify-content-center">
+            <input id="searchInput" type="text" class="form-control rounded-pill" placeholder="🔍Search Books by title...">
+            <div class="col-sm-4 col-md-2 col-6">
+              <button id="searchBtn" class="search-btn btn btn-primary fw-medium rounded-pill mt-1" type="submit">Search</button>
+            </div>
+            <!-- <div id="searchResults" class="book-grid"></div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <section class="book-section ">
+    <h2 class="fw-bold mb-5 fs-2">📖 Explore Book Categories</h2>
+  <div class="container">
+    <div class="category">
+      <h3>🧪 Science</h3>
+      <div class="book-grid">
+        <div class="book-card">
+          <img src="photos/physics.jpeg" alt="Science Book" />
+          <p>Physics for Beginners</p>
+          <div class="book-actions">
+            <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" class="btn" download>
+              📥 Download PDF
+            </a>
+            <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" class="btn"
+              target="_blank">
+              📖 Read
+                </a>
+          </div>
+        </div>
+        <div class="book-card">
+          <img src="photos/bio.jpeg" alt="Science Book" />
+          <p>Biology Basics</p>
+          <div class="book-actions">
+            <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" class="btn" download>
+              📥 Download PDF
+            </a>
+            <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" class="btn"
+              target="_blank">
+              📖 Read
+                </a>
+          </div>
+        </div>
+        <div class="book-card">
+          <img src="photos/pexels-chokniti-khongchum-1197604-2280549.jpg" alt="">
+          <p>Chemistry Concepts</p>
+          <div class="book-actions">
+            <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" class="btn" download>
+              📥 Download PDF
+            </a>
+            <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" class="btn"
+              target="_blank">
+              📖 Read
+                </a>
+          </div>
+        </div>
+        <div class="book-card">
+          <img src="photos/env.jpeg" alt="">
+          <p>Invironmental Science</p>
+          <div class="book-actions">
+            <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" class="btn" download>
+              📥 Download PDF
+            </a>
+            <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" class="btn"
+              target="_blank">
+              📖 Read
+                </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="category">
+      <h3>🧮 Maths</h3>
+      <div class="book-grid">
+        <div class="book-card">
+          <img src="photos/algebra.jpeg" alt="Math Book" />
+          <p>Algebra Essentials</p>
+          <div class="book-actions">
+            <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" class="btn" download>
+              📥 Download PDF
+            </a>
+            <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" class="btn"
+              target="_blank">
+              📖 Read
+                </a>
+          </div>
+        </div>
+        <div class="book-card">
+          <img src="photos/geometry.png" alt="Math Book" />
+          <p>Geometry Guide</p>
+          <div class="book-actions">
+            <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" class="btn" download>
+              📥 Download PDF
+            </a>
+            <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" class="btn"
+              target="_blank">
+              📖 Read
+                </a>
+          </div>
+        </div>
+        <div class="book-card">
+          <img src="photos/trigonometry.png" alt="Math Book" />
+          <p>Trigonometry Made Easy</p>
+          <div class="book-actions">
+            <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" class="btn" download>
+              📥 Download PDF
+            </a>
+            <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" class="btn"
+              target="_blank">
+              📖 Read
+                </a>
+          </div>
+        </div>
+        <div class="book-card">
+          <img src="photos/statistics.png" alt="Math Book" />
+          <p>Statistics Simplified</p>
+          <div class="book-actions">
+            <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" class="btn" download>
+              📥 Download PDF
+            </a>
+            <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" class="btn"
+              target="_blank">
+              📖 Read
+                </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="category">
+      <h3>📜 History</h3>
+      <div class="book-grid">
+        <div class="book-card">
+          <img src="photos/ancient.jpeg" alt="History Book" />
+          <p>Ancient Civilizations</p>
+          <div class="book-actions">
+            <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" class="btn" download>
+              📥 Download PDF
+            </a>
+            <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" class="btn"
+              target="_blank">
+              📖 Read
+                </a>
+          </div>
+        </div>
+        <div class="book-card">
+          <img src="photos/worldwars.jpeg" alt="History Book" />
+          <p>World Wars</p>
+          <div class="book-actions">
+            <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" class="btn" download>
+              📥 Download PDF
+            </a>
+            <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" class="btn"
+              target="_blank">
+              📖 Read
+                </a>
+          </div>
+        </div>
+        <div class="book-card">
+          <img src="photos/india.jpeg" alt="History Book">
+          <p>Modern Indian History</p>
+          <div class="book-actions">
+            <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" class="btn" download>
+              📥 Download PDF
+            </a>
+            <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" class="btn"
+              target="_blank">
+              📖 Read
+                </a>
+          </div>
+        </div>
+        <div class="book-card">
+          <img src="photos/medieval.jpeg" alt="History Book">
+          <p>Medieval History</p>
+          <div class="book-actions">
+            <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" class="btn" download>
+              📥 Download PDF
+            </a>
+            <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" class="btn"
+              target="_blank">
+              📖 Read
+                </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="category">
+      <h3>🖋 Literature</h3>
+      <div class="book-grid">
+        <div class="book-card">
+          <img src="photos/novels.jpeg" alt="Literature Book">
+          <p>Classic Novels</p>
+          <div class="book-actions">
+            <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" class="btn" download>
+              📥 Download PDF
+            </a>
+            <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" class="btn"
+              target="_blank">
+              📖 Read
+                </a>
+          </div>
+        </div>
+        <div class="book-card">
+          <img src="photos/poetry.jpeg" alt="Literature Book">
+          <p>Modern Poetry</p>
+          <div class="book-actions">
+            <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" class="btn" download>
+              📥 Download PDF
+            </a>
+            <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" class="btn"
+              target="_blank">
+              📖 Read
+                </a>
+          </div>
+        </div>
+        <div class="book-card">
+          <img src="photos/ahakespears.jpeg" alt="Literature Book">
+          <p>Shakespeare Stories</p>
+          <div class="book-actions">
+            <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" class="btn" download>
+              📥 Download PDF
+            </a>
+            <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" class="btn"
+              target="_blank">
+              📖 Read
+                </a>
+          </div>
+        </div>
+        <div class="book-card">
+          <img src="photos/literature.png" alt="Literature Book">
+          <p>World Literature</p>
+          <div class="book-actions">
+            <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" class="btn" download>
+              📥 Download PDF
+            </a>
+            <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" class="btn"
+              target="_blank">
+              📖 Read
+                </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="category">
+      <h3>💻 Computer Science</h3>
+      <div class="book-grid">
+        <div class="book-card">
+          <img src="photos/html css.png" alt="CS Book">
+          <p>>HTML & CSS</p>
+          <div class="book-actions">
+            <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" class="btn" download>
+              📥 Download PDF
+            </a>
+            <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" class="btn"
+              target="_blank">
+              📖 Read
+                </a>
+          </div>
+        </div>
+        <div class="book-card">
+          <img src="photos/java.png" alt="CS Book">
+          <p>Java Programming</p>
+          <div class="book-actions">
+            <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" class="btn" download>
+              📥 Download PDF
+            </a>
+            <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" class="btn"
+              target="_blank">
+              📖 Read
+                </a>
+          </div>
+        </div>
+        <div class="book-card">
+          <img src="photos/data structure.jpeg" alt="CS Book">
+          <p>Data Structures</p>
+          <div class="book-actions">
+            <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" class="btn" download>
+              📥 Download PDF
+            </a>
+            <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" class="btn"
+              target="_blank">
+              📖 Read
+                </a>
+          </div>
+        </div>
+        <div class="book-card">
+          <img src="photos/python.png" alt="CS Book">
+          <p>Learn Python</p>
+          <div class="book-actions">
+            <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" class="btn" download>
+              📥 Download PDF
+            </a>
+            <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" class="btn"
+              target="_blank">
+              📖 Read
+                </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="category">
+      <h3>🧠 Psychology</h3>
+      <div class="book-grid">
+        <div class="book-card">
+          <img src="photos/psychhology.jpeg" alt="Psychology Book">
+          <p>Intro to Psychology</p>
+          <div class="book-actions">
+            <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" class="btn" download>
+              📥 Download PDF
+            </a>
+            <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" class="btn"
+              target="_blank">
+              📖 Read
+                </a>
+          </div>
+        </div>
+        <div class="book-card">
+          <img src="photos/mind.jpeg" alt="Psychology Book">
+          <p>Mind & Emotion</p>
+          <div class="book-actions">
+            <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" class="btn" download>
+              📥 Download PDF
+            </a>
+            <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" class="btn"
+              target="_blank">
+              📖 Read
+                </a>
+          </div>
+        </div>
+        <div class="book-card">
+          <img src="photos/human.jpeg" alt="Psychology Book">
+          <p>Human Behavior</p>
+          <div class="book-actions">
+            <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" class="btn" download>
+              📥 Download PDF
+            </a>
+            <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" class="btn"
+              target="_blank">
+              📖 Read
+                </a>
+          </div>
+        </div>
+        <div class="book-card">
+          <img src="photos/intelligence.png" alt="Psychology Book">
+          <p>Emotional Intelligence</p>
+          <div class="book-actions">
+            <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" class="btn" download>
+              📥 Download PDF
+            </a>
+            <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" class="btn"
+              target="_blank">
+              📖 Read
+                </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="category">
+      <h3>🌍 Geography</h3>
+      <div class="book-grid">
+        <div class="book-card">
+          <img src="photos/world.jpeg" alt="Geography Book">
+          <p>World Maps</p>
+          <div class="book-actions">
+            <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" class="btn" download>
+              📥 Download PDF
+            </a>
+            <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" class="btn"
+              target="_blank">
+              📖 Read
+                </a>
+          </div>
+        </div>
+        <div class="book-card">
+          <img src="photos/oceans.jpeg" alt="Geography Book">
+          <p>Continents & Oceans</p>
+          <div class="book-actions">
+            <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" class="btn" download>
+              📥 Download PDF
+            </a>
+            <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" class="btn"
+              target="_blank">
+              📖 Read
+                </a>
+          </div>
+        </div>
+        <div class="book-card">
+          <img src="photos/physical.jpeg" alt="Geography Book">
+          <p>Physical Geography</p>
+          <div class="book-actions">
+            <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" class="btn" download>
+              📥 Download PDF
+            </a>
+            <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" class="btn"
+              target="_blank">
+              📖 Read
+                </a>
+          </div>
+        </div>
+        <div class="book-card">
+          <img src="photos/humangeo.jpeg" alt="Geography Book">
+          <p>Human Geography</p>
+          <div class="book-actions">
+            <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" class="btn" download>
+              📥 Download PDF
+            </a>
+            <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" class="btn"
+              target="_blank">
+              📖 Read
+                </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="category">
+      <h3>🧘‍♀ Health & Wellness</h3>
+      <div class="book-grid">
+        <div class="book-card">
+          <img src="photos/healthy.png" alt="Health Book">
+          <p>Healthy Living</p>
+          <div class="book-actions">
+            <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" class="btn" download>
+              📥 Download PDF
+            </a>
+            <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" class="btn"
+              target="_blank">
+              📖 Read
+                </a>
+          </div>
+        </div>
+        <div class="book-card">
+          <img src="photos/yoga.png" alt="Health Book">
+          <p>Yoga Basics</p>
+          <div class="book-actions">
+            <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" class="btn" download>
+              📥 Download PDF
+            </a>
+            <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" class="btn"
+              target="_blank">
+              📖 Read
+                </a>
+          </div>
+        </div>
+        <div class="book-card">
+          <img src="photos/nutrition.jpeg" alt="Health Book">
+          <p>Nutrition Guide</p>
+          <div class="book-actions">
+            <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" class="btn" download>
+              📥 Download PDF
+            </a>
+            <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" class="btn"
+              target="_blank">
+              📖 Read
+                </a>
+          </div>
+        </div>
+        <div class="book-card">
+          <img src="photos/matters.jpeg" alt="Health Book">
+          <p>Mental Health Matters</p>
+          <div class="book-actions">
+            <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" class="btn" download>
+              📥 Download PDF
+            </a>
+            <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" class="btn"
+              target="_blank">
+              📖 Read
+                </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="category">
+      <h3>🗣 Languages</h3>
+      <div class="book-grid">
+        <div class="book-card">
+          <img src="photos/grammer.jpeg" alt="Language Book">
+          <p>English Grammar</p>
+          <div class="book-actions">
+            <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" class="btn" download>
+              📥 Download PDF
+            </a>
+            <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" class="btn"
+              target="_blank">
+              📖 Read
+                </a>
+          </div>
+        </div>
+        <div class="book-card">
+          <img src="photos/hindi.jpeg" alt="Language Book">
+          <p>Hindi Speaking Course</p>
+          <div class="book-actions">
+            <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" class="btn" download>
+              📥 Download PDF
+            </a>
+            <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" class="btn"
+              target="_blank">
+              📖 Read
+                </a>
+          </div>
+        </div>
+        <div class="book-card">
+          <img src="photos/french.jpeg" alt="Language Book">
+          <p>French for Beginners</p>
+          <div class="book-actions">
+            <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" class="btn" download>
+              📥 Download PDF
+            </a>
+            <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" class="btn"
+              target="_blank">
+              📖 Read
+                </a>
+          </div>
+        </div>
+        <div class="book-card">
+          <img src="photos/spanish.jpeg" alt="Language Book">
+          <p>Spanish Basics</p>
+          <div class="book-actions">
+            <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" class="btn" download>
+              📥 Download PDF
+            </a>
+            <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" class="btn"
+              target="_blank">
+              📖 Read
+                </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="category">
+      <h3>🎨 Art & Design</h3>
+      <div class="book-grid">
+        <div class="book-card">
+          <img src="photos/drawing.jpeg" alt="Art Book">
+          <p>Drawing Techniques</p>
+          <div class="book-actions">
+            <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" class="btn" download>
+              📥 Download PDF
+            </a>
+            <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" class="btn"
+              target="_blank">
+              📖 Read
+                </a>
+          </div>
+        </div>
+        <div class="book-card">
+          <img src="photos/sketch.png" alt="Art Book">
+          <p>Sketching for Beginners</p>
+          <div class="book-actions">
+
+            <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" class="btn" download>
+              📥 Download PDF
+            </a>
+            <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" class="btn"
+              target="_blank">
+              📖 Read
+                </a>
+          </div>
+        </div>
+        <div class="book-card">
+          <img src="photos/graphic.png" alt="Art Book">
+          <p>Graphic Design Basics</p>
+          <div class="book-actions">
+
+            <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" class="btn" download>
+              📥 Download PDF
+            </a>
+            <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" class="btn"
+              target="_blank">
+              📖 Read
+                </a>
+          </div>
+        </div>
+        <div class="book-card">
+          <img src="photos/colr.jpeg" alt="Art Book">
+          <p>Color Theory</p>
+          <div class="book-actions">
+            <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" class="btn" download>
+              📥 Download PDF
+            </a>
+            <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" class="btn"
+              target="_blank">
+              📖 Read
+                </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="category">
+      <h3>🚀 Space & Astronomy</h3>
+      <div class="book-grid">
+        <div class="book-card">
+          <img src="photos/solor.jpeg" alt="Astronomy Book">
+          <p>Solar System</p>
+          <div class="book-actions">
+            <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" class="btn" download>
+              📥 Download PDF
+            </a>
+            <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" class="btn"
+              target="_blank">
+              📖 Read
+                </a>
+          </div>
+        </div>
+        <div class="book-card">
+          <img src="photos/star.jpeg" alt="Astronomy Book">
+          <p>Beyond the Stars</p>
+          <div class="book-actions">
+
+            <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" class="btn" download>
+              📥 Download PDF
+            </a>
+            <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" class="btn"
+              target="_blank">
+              📖 Read
+                </a>
+          </div>
+        </div>
+        <div class="book-card">
+          <img src="photos/planets.jpeg" alt="Astronomy Book">
+          <p>Life on other Planets</p>
+          <div class="book-actions">
+            <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" class="btn" download>
+              📥 Download PDF
+            </a>
+            <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" class="btn"
+              target="_blank">
+              📖 Read
+                </a>
+          </div>
+        </div>
+        <div class="book-card">
+          <img src="photos/hole.jpeg" alt="Astronomy Book">
+          <p>Black Holes Explained</p>
+          <div class="book-actions">
+            <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" class="btn" download>
+              📥 Download PDF
+            </a>
+            <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" class="btn"
+              target="_blank">
+              📖 Read
+                </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <a class="back" href="#">⬆️Back to Top</a>
+  <footer class="site-footer">
+    <div class="footer-container">
+
+      <div class="footer-section about">
+        <h3>📘 About StudyShelf</h3>
+        <p>Your one-stop destination for quality eBooks in Science, Maths, History, and more. Read, download, and grow
+          smarter every day!</p>
+      </div>
+
+      <div class="footer-section links">
+        <h3>🔗 Quick Links</h3>
+        <ul>
+          <li><a href="index.html">🏠 Home</a></li>
+          <li><a href="books.html">📚 Books</a></li>
+          <li><a href="about.html">💼 About Us</a></li>
+          <li><a href="contact.html">📞 Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section contact">
+        <h3>📩 Contact Us</h3>
+        <p>Email: support@studyshelf.com</p>
+        <p>Phone: +91 9876543210</p>
+        <p>Location: Lucknow, India 🇮🇳</p>
+      </div>
+
+      <div class="footer-section follow">
+        <h3>📱 Follow Us</h3>
+        <div class="social-icons">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-square-instagram"></i></i></a>
+          <a href="#"><i class="fa-brands fa-square-twitter"></i></i></a>
+          <a href="#"><i class="fa-brands fa-square-youtube"></i></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 StudyShelf | Made with ❤ by Pranjali Mishra</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+    
+
+</body>
+
+</html>

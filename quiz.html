@@ -1,0 +1,176 @@
+<html>
+
+<head>
+  <title>StudyShelf | Quizzes</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="icon" href="favicon.png" type="images/StudyBooks.png">
+</head>
+
+<body>
+  <header class="navbar navbar-expand-lg shadow-sm bg-dark sticky-top rounded mt-2">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold fs-2 d-flex text-white align-items-center" href="#">
+        <img src="images/Web Logo.jpg" alt="Avatar Logo" style="width:70px; object-fit:cover; "
+          class="img-thumbnail rounded-circle me-3">
+        <span>StudyShelf</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <nav class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto  fs-5 me-4 text-center">
+          <li class="nav-item"><a href="index.html" class="nav-link me-3">🏠 Home</a></li>
+          <li class="nav-item"><a href="books.html" class="nav-link  me-3">📚 Books</a></li>
+          <li class="nav-item"><a href="quiz.html" class="nav-link me-3 active">🎯 Quiz</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link me-3">👥 About Us</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link me-3">📩 Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <header style="padding: 40px 20px; border-radius: 13px;">
+    <h1 class="fw-bold">🧠 Challenge Your Brain!</h1>
+    <p class="fs-6 fw-medium">Practice quizzes from various subjects.
+      Learn smart. Test Smarter!</p>
+  </header>
+
+  <main class="main-container">
+    <h2 class="mb-4 fw-bold">Choose a Subject</h2>
+    <!-- Subject Selection Grid-->
+    <div class="filters ">
+      <button class="fw-bold fs-5" onclick="filterQuiz('All')">📚 All</button>
+      <button class="fw-bold fs-5" onclick="filterQuiz('Science')">🧪 Science</button>
+      <button class="fw-bold fs-5" onclick="filterQuiz('math')">📐 Math</button>
+      <button class="fw-bold fs-5" onclick="filterQuiz('coding')">💻 Coding</button>
+    </div>
+    <section id="subject-select" class="subject-grid">
+      <div class="subject-card" onclick="startQuiz('science')">
+        <h2>🧪 Science</h2>
+        <p>Test your knowledge of physics, chemistry & biology.</p>
+        <a href="#" class="fw-bold">Start Quiz</a>
+      </div>
+      <div class="subject-card" onclick="startQuiz('math')">
+        <h2>📐 Math</h2>
+        <p>Algebra, Geometry, Fractions & more!</p>
+        <a href="#"  class="fw-bold">Start Quiz</a>
+      </div>
+      <div class="subject-card" onclick="startQuiz('History')">
+        <h2>⌛ History</h2>
+        <p>Ancient to modern world facts. Try now!</p>
+        <a href="#"  class="fw-bold">Start Quiz</a>
+      </div>
+      <div class="subject-card" onclick="startQuiz('coding')">
+        <h2>💻 Coding</h2>
+        <p>HTML, CSS, JS basics</p>
+        <a href="#"  class="fw-bold mt-4">Start Quiz</a>
+      </div>
+      <div class="subject-card" onclick="startQuiz('language')">
+        <h2>🗣 Language</h2>
+        <p>Grammar, Vocabulary & Communication quizzes</p>
+        <a href="#"  class="fw-bold">Start Quiz</a>
+      </div>
+      <div class="subject-card" onclick="startQuiz('geography')">
+        <h2>🌏 Geography</h2>
+        <p>Continents, countries & capitals quiz</p>
+        <a href="#"  class="fw-bold">Start Quiz</a>
+      </div>
+      <div class="subject-card" onclick="startQuiz('geography')">
+        <h2>🖋 Literature</h2>
+        <p>Poems, stories & famous authors quiz</p>
+        <a href="#"  class="fw-bold">Start Quiz</a>
+      </div>
+      <div class="subject-card" onclick="startQuiz('Art & Design')">
+        <h2>🎨 Art & Design</h2>
+        <p>Famous artworks, styles & creativity tests</p>
+        <a href="#"  class="fw-bold">Start Quiz</a>
+      </div>
+      <div class="subject-card" onclick="startQuiz('Astronomy')">
+        <h2>🚀 Space & Astronomy</h2>
+        <p>planets, galaxies & space science quizzes</p>
+        <a href="#"  class="fw-bold">Start Quiz</a>
+      </div>
+  
+      <!-- CTA section -->
+      <section class="quiz-cta">
+        <h2 style="margin-bottom: 50px;">⏰Ready for a Timed Challenge?</h2>
+        <p>Try our 5-minute rapid fire quiz and test your speed!</p>
+        <a href="#" class="btn3">Try Timed Quiz</a>
+      </section>
+      <!-- Tips Section -->
+      <section class="quiz-tips">
+        <h2 style="padding-left: 30px;">💡Quiz Tips</h2>
+        <ul style="margin-right: 20px;">
+          <li>🎯Read Questions Carefully</li>
+          <li>⏱ Manage your time wisely</li>
+          <li>📚review the concepts if you make a mistake</li>
+        </ul>
+      </section>
+
+      <!-- newsletter -->
+      <section class="newsletter">
+        <h2>Get Weekly Quizzes</h2>
+        <p>Subscribe to get fresh quiz sets every week in your inbox.</p>
+        <form><input type="Email" placeholder="Enter your Email">
+          <button type="submit">Subscribe</button>
+        </form>
+        </ssection>
+
+  </main>
+
+  <!-- footer -->
+  <a class="back" href="#">⬆️Back to Top</a>
+ <footer class="site-footer">
+  <div class="footer-container">
+
+    <div class="footer-section about">
+      <h3>📘 About StudyShelf</h3>
+      <p>Your one-stop destination for quality eBooks in Science, Maths, History, and more. Read, download, and grow smarter every day!</p>
+    </div>
+
+    <div class="footer-section links">
+      <h3>🔗 Quick Links</h3>
+      <ul>
+        <li><a href="index.html">🏠 Home</a></li>
+        <li><a href="books.html">📚 Books</a></li>
+        <li><a href="about.html">💼 About Us</a></li>
+        <li><a href="contact.html">📞 Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section contact">
+      <h3>📩 Contact Us</h3>
+      <p>Email: support@studyshelf.com</p>
+      <p>Phone: +91 9876543210</p>
+      <p>Location: Lucknow, India 🇮🇳</p>
+    </div>
+
+    <div class="footer-section follow">
+      <h3>📱 Follow Us</h3>
+      <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-square-instagram"></i></i></a>
+        <a href="#"><i class="fa-brands fa-square-twitter"></i></i></a>
+        <a href="#"><i class="fa-brands fa-square-youtube"></i></i></a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 StudyShelf | Made with ❤ by Pranjali Mishra</p>
+  </div>
+</footer>
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

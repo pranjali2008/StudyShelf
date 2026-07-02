@@ -1,0 +1,251 @@
+<html>
+
+<head>
+  <title>StudyShelf</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="icon" href="favicon.png" type="images/StudyBooks.png">
+</head>
+
+<body>
+  <header class="navbar navbar-expand-lg shadow-sm bg-dark sticky-top rounded mt-2">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold fs-2 d-flex text-white align-items-center" href="#">
+        <img src="images/Web Logo.jpg" alt="Avatar Logo" style="width:70px; object-fit:cover; "
+          class="img-thumbnail rounded-circle me-3">
+        <span>StudyShelf</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <nav class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto  fs-5 me-4 text-center">
+          <li class="nav-item"><a href="index.html" class="nav-link me-3 active">🏠 Home</a></li>
+          <li class="nav-item"><a href="books.html" class="nav-link  me-3">📚 Books</a></li>
+          <li class="nav-item"><a href="quiz.html" class="nav-link me-3">🎯 Quiz</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link me-3">👥 About Us</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link me-3">📩 Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="container-fluid mt-4">
+    <div class="search-bar row justify-content-center">
+      <div class="col-md-6 col-sm-10  col-12 ">
+        <div class="input-group justify-content-center">
+          <input id="homeSearch" type="text" class="form-control rounded-pill" placeholder="🔍 Search for Books...">
+
+          <div class="col-sm-4 col-md-2 col-6">
+            <button id="searchBtn" class="search-btn btn btn-primary fw-medium rounded-pill " type="submit">Search</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- 🌟 Hero Section -->
+  <main class="hero-section rounded py-5 bg-primary text-white">
+    <section class="hero-content container">
+      <div class="row align-items-center">
+
+        <div class="col-lg-6 col-md-6 col-12 text-center text-md-start">
+          <h1 class="mb-3 fw-bold">📚 Welcome to StudyBooks!</h1>
+          <p class="lead mb-4">Discover a world of knowledge with free and fun study books. Perfect for students of all
+            ages! 🎓📖</p>
+
+          <div class="mb-4 badges ms-2 d-flex flex-wrap gap-2 justify-content-center justify-content-md-start ">
+            <span class="badge bg-light fs-6 text-dark">⭐ 1000+ Books</span>
+            <span class="badge bg-light fs-6 text-dark">🆓 100% Free</span>
+            <span class="badge bg-light fs-6 text-dark">🌐 For All Classes</span>
+          </div>
+          <a href="books.html" class="cta-btn btn btn-warning btn-lg fw-bold">Explore Books 📘</a>
+        </div>
+        <div class="hero-image col-lg-6 col-lg-6 col-12 mt-4 mt-md-0 text-center">
+          <div class="ms-1">
+            <img class="img-fluid ms-md-2" src="images/school-7408260_640.jpg" alt="Study Books">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 📂 Categories Section -->
+  <section class="categories py-5 text-center ">
+    <h2 class="fw-bold">Book Categories 📂</h2>
+    <div class="category-list justify-content-center d-flex flex-wrap mt-4">
+      <div class="cat-card fw-bold" >📘 Science</div>
+      <div class="cat-card fw-bold">📗 Math</div>
+      <div class="cat-card fw-bold">📙 History</div>
+      <div class="cat-card fw-bold">💻 Coding</div>
+      <div class="cat-card fw-bold">📒 Literature</div>
+    </div>
+  </section>
+
+  <!-- 📖 Featured Books -->
+  <section class="featured-books ">
+    <h2 class="text-center mb-4 fw-bold">Popular Books 📖</h2>
+    <div class="book-cards">
+
+      <div class="book-card">
+        <img src="photos/geometry-1044090_640.jpg" alt="Book 1">
+
+        <h4 class="fs-5">Algebra Basics</h4>
+        <p>Grade 9 Math</p>
+
+      </div>
+
+
+      <div class="book-card">
+        <img src="photos/physics-6936704_640.jpg" alt="Book 2">
+
+        <h4 class="fs-5">Physics Fun</h4>
+        <p>Class 10 Science</p>
+      </div>
+
+
+      <div class="book-card">
+        <img src="photos/software-developer-6521720_640.jpg" alt="Book 3" class="rounded">
+
+        <h4 class="fs-5">Intro to HTML</h4>
+        <p style="height: 44px;">Web Coding Guide</p>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- 💡 Why Choose Us -->
+  <section class="benefits">
+    <h2 class="text-center mb-4 fw-bold">Why Choose StudyBooks?</h2>
+    <div class="benefit-grid">
+      <div class="benefit">
+        <img src="https://cdn-icons-png.flaticon.com/512/681/681494.png" alt="Free Access" />
+        <h3>100% Free Access</h3>
+        <p>StudyBooks provides free access to thousands of books and notes for every student.</p>
+      </div>
+      <div class="benefit">
+        <img src="https://cdn-icons-png.flaticon.com/512/3500/3500833.png" alt="Smart Library" />
+        <h3>Smart Library</h3>
+        <p>Search easily by subject, class, board or author and find exactly what you need.</p>
+      </div>
+      <div class="benefit">
+        <img src="https://cdn-icons-png.flaticon.com/512/3875/3875142.png" alt="Anytime Access" />
+        <h3>Anytime Anywhere</h3>
+        <p>Use StudyBooks on phone, tablet or computer 24/7 from anywhere in the world.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <div class="container">
+      <h2 class="fw-medium mb-4 display-6">What Students Say</h2>
+      <div class="row g-4 justify-content-center ">
+
+        <div class="testimonial col-12 col-md-6 col-lg-4">
+          <div class="shadow-lg border-0 p-4 hover-card">
+            <p class="fst-italic">"This website saved me during exams. Free notes and books!"</p>
+            <h4>- Riya Sharma, Class 12</h4>
+          </div>
+        </div>
+        <div class="testimonial col-12 col-md-6 col-lg-4">
+          <div class="shadow-lg border-0 p-4 hover-card">
+            <p class="fst-italic">"Great design. Easy to use. Love the dark mode!"</p>
+            <h4>- Aarav Verma, B.Tech</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- CTA -->
+  <section class="cta rounded">
+    <h2 class="fw-bold">Start Learning Today — It's 100% Free!</h2>
+    <a href="signup.html" class="btn">Join Now</a>
+  </section>
+
+
+  <section class="counters py-3 rounded">
+    <div class="counter-box">
+      <h2><span class="counter fw-bold" data-target="1200">1000</span>+</h2>
+      <p>Books Available</p>
+
+    </div>
+    <div class="counter-box">
+      <h2><span class="counter fw-bold" data-target="50000">20K</span>+</h2>
+      <p>Downloads</p>
+    </div>
+    <div class="counter-box">
+      <h2><span class="counter fw-bold" data-target="12000">11K</span>+</h2>
+      <p>Happy Students</p>
+    </div>
+    </div>
+  </section>
+  <!-- 📞 Call to Action -->
+  <section class="cta-section rounded">
+    <h2>Need Help Choosing a Book? 🤔</h2>
+    <a href="contact.html" class="btn-secondary mt">Contact Us 📞</a>
+  </section>
+
+
+  <a class="back" href="#">⬆️Back to Top</a>
+  <footer class="site-footer">
+    <div class="footer-container">
+
+      <div class="footer-section about">
+        <h3 class="fw-bold">📘 About StudyShelf</h3>
+        <p>Your one-stop destination for quality eBooks in Science, Maths, History, and more. Read, download, and grow
+          smarter every day!</p>
+      </div>
+
+      <div class="footer-section links">
+        <h3>🔗 Quick Links</h3>
+        <ul>
+          <li><a href="index.html">🏠 Home</a></li>
+          <li><a href="books.html">📚 Books</a></li>
+          <li><a href="about.html">💼 About Us</a></li>
+          <li><a href="contact.html">📞 Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section contact">
+        <h3>📩 Contact Us</h3>
+        <p>Email: support@studyshelf.com</p>
+        <p>Phone: +91 9876543210</p>
+        <p>Location: Lucknow, India 🇮🇳</p>
+      </div>
+
+      <div class="footer-section follow">
+        <h3>📱 Follow Us</h3>
+        <div class="social-icons">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-square-instagram"></i></i></a>
+          <a href="#"><i class="fa-brands fa-square-twitter"></i></i></a>
+          <a href="#"><i class="fa-brands fa-square-youtube"></i></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 StudyShelf | Made with ❤ by Pranjali Mishra</p>
+    </div>
+  </footer>
+
+  </main>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
